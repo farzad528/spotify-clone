@@ -16,5 +16,3 @@ function Login() {
 }
 
 export default Login;
-// Spotify logo
-// Login with Spotify Butoon
