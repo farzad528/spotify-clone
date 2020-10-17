@@ -11,7 +11,7 @@ function Header() {
       <div className="header__left">
         <SearchIcon />
         <input
-          placeholder="Search for Artists, Songs, or Playlists"
+          placeholder="Search for Artists, Songs, or Podcasts"
           text="text"
         />
       </div>
