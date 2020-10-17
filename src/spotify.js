@@ -10,22 +10,19 @@ const scopes = [
   "user-read-playback-state",
   "user-top-read",
   "user-modify-playback-state",
-  "streaming",
-  "user-read-email",
-  "user-read-private",
 ];
 
 export const getTokenFromUrl = () => {
-  return window.location.hash
-    .substring(1)
-    .split("&")
-    .reduce((initial, item) => {
-      var parts = item.split("=");
-      initial[parts[0]] = decodeURIComponent(parts[1]);
-
-      return initial;
-    }, {});
-};
+    return window.location.hash
+      .substring(1)
+      .split("&")
+      .reduce((initial, item) => {
+        var parts = item.split("=");
+        initial[parts[0]] = decodeURIComponent(parts[1]);
+  
+        return initial;
+      }, {});
+  };
 
 export const loginUrl = `${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join(
   "%20"

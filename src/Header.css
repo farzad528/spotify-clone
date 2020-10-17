@@ -23,6 +23,14 @@
 .header__right {
     display: flex;
     align-items: center;
+    background-color: rgba( 0, 0, 0, 0.7);
+    border-radius: 23px;
+    border: 0;
+    padding-left: 4px;
+    padding-right: 8px;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-box-align: center;
 }
 
 .header__right > h4 {

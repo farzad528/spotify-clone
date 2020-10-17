@@ -1,5 +1,5 @@
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
-import PlayCircleFilledIcon from "@material-ui/icons/PlayCircleFilled";
+import PlayCircleFilledWhiteIcon from '@material-ui/icons/PlayCircleFilledWhite';
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import React from "react";
 import "./Body.css";
@@ -63,7 +63,7 @@ function Body({ spotify }) {
 
       <div className="body__songs">
         <div className="body__icons">
-          <PlayCircleFilledIcon
+          <PlayCircleFilledWhiteIcon
             className="body__shuffle"
             onClick={playPlaylist}
           />
